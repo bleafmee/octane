@@ -6,7 +6,7 @@ Feature: Advantage Online
 	Scenario Outline: verify mice color
 		Given I am in the site
 		And I select the Mice category
-		When I filter by "<color>" color
+		When I filter by "<color>" colour
 		Then the mouse price is "<price>"
 
 		Examples:
