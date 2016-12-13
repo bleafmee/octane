@@ -14,12 +14,48 @@
 		return __reportExtension.utils.fromDetailData.getReportNodeType(context.detailData);
 	};
 
+	var isSupportedVerificationTO = function (context){
+		if (context && context.detailData && context.detailData.type === "Step"){
+			var operationDetails = context.detailData.test_obj_info;
+
+			var overviewData = context.detailData.overview;
+
+			if (overviewData.caption.indexOf("Run Error") > -1 && context.detailData.raw_data.Data.ErrorText){
+				return false;
+			}
+
+			if (typeof(operationDetails.operation) === 'string'){
+				var operation = operationDetails.operation.toLowerCase();
+				if (operation === "verifyimageexists" || operation === "verifyimagematch" ){
+					return true;
+				}
+			}
+		}
+		return false;
+	};
+
 	__reportExtension.addExternalRender('RKey:TestFlowTree.Node.Visibility', {
 		// preCheck callback
 		preCheck: function (context, args) {
 			var nodeType = __reportExtension.utils.fromDetailData.getReportNodeType(context.detailData);
 			if (isNodeTypeSupport(nodeType))
 				args.needExec = true;
+
+			if (context && context.nodeDataModel && context.nodeDataModel.caption && context.nodeDataModel.caption.objects_chain){
+				context.nodeDataModel.caption.objects_chain.map(function(item){
+					if (item.icon_key === "bgicon-default-test-obj"){
+						item.icon_key = "c-icon-" + item.object_type.split(".")[1];
+					}
+				})
+			}
+
+			// change verifyImageExists icon
+			if (isSupportedVerificationTO(context)){
+				if (context.detailData.status === "error")
+					context.nodeDataModel.status_indicator_iconkey = "VerifyFailure"
+				else
+					context.nodeDataModel.status_indicator_iconkey = "VerifySuccess"
+			}
 		},
 
 		// execute callback
@@ -32,12 +68,25 @@
 		preCheck: function (context, args) {
 			if (isNodeTypeSupport(getNodeType(context)))
 				args.needExec = true;
+
+			// the context contains TO with verification
+			if (isSupportedVerificationTO(context))
+				args.needExec = true;
 		},
 
 		// execute callback
 		execute: function (context, args) {
+			var caption = "";
 			var nodeType = getNodeType(context);
-			var caption = '<span class=my-ext-details-caption>' + nodeType.split(/(?=[A-Z])/).join(" ") + ' Details</span>';
+			var isError = context.detailData.status;
+			if (isNodeTypeSupport(nodeType)){
+				var detailsCaption = isError.toLowerCase() === 'error' ? 'Error': nodeType.split(/(?=[A-Z])/).join(" ");
+				caption = '<span class=my-ext-details-caption>' + detailsCaption + ' Details</span>';
+			}
+			else{
+				var detailsCaption =isError.toLowerCase() === 'error' ? 'Error' : 'Verification';
+				caption = '<span class=my-ext-details-caption>' + detailsCaption + 'Details</span>';
+			}
 			new DetailsPaneCaptionRenderer(caption).render(context.parent);
 		}
 	});
@@ -46,12 +95,23 @@
 		preCheck: function (context, args) {
 			if (isNodeTypeSupport(getNodeType(context)))
 				args.needExec = true;
+
+			// the context contains TO with verification
+			if (isSupportedVerificationTO(context))
+				args.needExec = true;
 		},
 
 		// execute callback
 		execute: function (context, args) {
+			var caption = "";
 			var nodeType = getNodeType(context);
-			var caption = '<span class="cust-caption-detail">'+ nodeType.split(/(?=[A-Z])/).join(" ") + '</span>';
+			var errorText = context.detailData.status.toLowerCase() == 'error' ? "Run Error - " : "";
+			if (isNodeTypeSupport(nodeType)) {
+				caption = '<span class="cust-caption-detail">'+ errorText + nodeType.split(/(?=[A-Z])/).join(" ") + '</span>';
+			}
+			else{
+				caption = '<span class="cust-caption-detail"> + errorText + Verification</span>';
+			}
 			new DetailsOverviewSectionCaptionRenderer(caption).render(context.parent);
 		}
 	});
@@ -87,8 +147,8 @@
 // SIG // MIIdhgYJKoZIhvcNAQcCoIIddzCCHXMCAQExCzAJBgUr
 // SIG // DgMCGgUAMGcGCisGAQQBgjcCAQSgWTBXMDIGCisGAQQB
 // SIG // gjcCAR4wJAIBAQQQEODJBs441BGiowAQS9NQkAIBAAIB
-// SIG // AAIBAAIBAAIBADAhMAkGBSsOAwIaBQAEFDhOF6CUcbuk
-// SIG // g8K6cYKkz7yApx/7oIIYtjCCA+4wggNXoAMCAQICEH6T
+// SIG // AAIBAAIBAAIBADAhMAkGBSsOAwIaBQAEFB9B2ysyAWpt
+// SIG // RMgqNy0AvT3Pc74UoIIYtjCCA+4wggNXoAMCAQICEH6T
 // SIG // 6/t8xk5Z6kuad9QG/DswDQYJKoZIhvcNAQEFBQAwgYsx
 // SIG // CzAJBgNVBAYTAlpBMRUwEwYDVQQIEwxXZXN0ZXJuIENh
 // SIG // cGUxFDASBgNVBAcTC0R1cmJhbnZpbGxlMQ8wDQYDVQQK
@@ -288,30 +348,30 @@
 // SIG // 6TwwCQYFKw4DAhoFAKBwMBAGCisGAQQBgjcCAQwxAjAA
 // SIG // MBkGCSqGSIb3DQEJAzEMBgorBgEEAYI3AgEEMBwGCisG
 // SIG // AQQBgjcCAQsxDjAMBgorBgEEAYI3AgEVMCMGCSqGSIb3
-// SIG // DQEJBDEWBBR1im30Ip4Orv35iz7Dq9fHhF0TajANBgkq
-// SIG // hkiG9w0BAQEFAASCAQBmEFnmUUZbc5r5smBlFgaQwXHN
-// SIG // WqbYjcGm0++dBz6mfsoF5H4qD7fQeyY22X3P7k+ohyxR
-// SIG // 9AaIs3AdD1f4zJZzic3twEg6Yg6W082Amwjh+jEk4gY1
-// SIG // lTvqjO40n7BLbrnz1HUSjIZySKoquEuxu8gMxhRVERwm
-// SIG // kQ7UxyXYojV7GZcTtcFhOR42Dogq4nxJ82suguZ8Fsnw
-// SIG // hrjSPWbQkl5HAtT6OpuIHnayqJeVTAgc/UqMw0Y0DvBM
-// SIG // 5LqQgPBRXG1VpFaagWZpEKKlXf+a42UUsDyo4z/QVAAo
-// SIG // PQooFEyb+nogBMuTNTyOXIWudFyEXpKBnxqiB3r3O0J5
-// SIG // EgjOri26oYICCzCCAgcGCSqGSIb3DQEJBjGCAfgwggH0
+// SIG // DQEJBDEWBBTGcTXubdf0J63hmm+H+Ucbx6/sMTANBgkq
+// SIG // hkiG9w0BAQEFAASCAQAqkgUBmMw2X7jK1I3HwBNNcs2V
+// SIG // gATPCR2xdEUWlNspTXufEwovXdpeMYJLSLn/oVnWch9U
+// SIG // nqNmn0/EBHsCw/aSvTyKqr6laM0lOmjwJoRaMGlsNwP7
+// SIG // gB2B5t00LK4i9LqO1Ds8bu//QxctLb3DpDb2B+stxVIk
+// SIG // u87B04NDIUoYFKJ8gC+jswDiTXc+ujSymjXpd+W3I4tb
+// SIG // DPki3OlFTCpR4aGW5nskvDTQ0jR6Qju0ksaawGDdlVJL
+// SIG // XyJw4TbemGoO0WjbJ2aM/s7/0A5eUZr71b3zr9FvV4RY
+// SIG // oL7LQL8xjx9fmZi7vN0bHxMTbV4a6IHnGESIcBJ01EhB
+// SIG // 8jSRcHigoYICCzCCAgcGCSqGSIb3DQEJBjGCAfgwggH0
 // SIG // AgEBMHIwXjELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5
 // SIG // bWFudGVjIENvcnBvcmF0aW9uMTAwLgYDVQQDEydTeW1h
 // SIG // bnRlYyBUaW1lIFN0YW1waW5nIFNlcnZpY2VzIENBIC0g
 // SIG // RzICEA7P9DjI/r81bgTYapgbGlAwCQYFKw4DAhoFAKBd
 // SIG // MBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZI
-// SIG // hvcNAQkFMQ8XDTE2MDUyMTAxNTY0M1owIwYJKoZIhvcN
-// SIG // AQkEMRYEFB8R5cnTqYaBcgDY7liE4Y3DKIvNMA0GCSqG
-// SIG // SIb3DQEBAQUABIIBAFW9imgPPjfIQM0gi1Ss8+VRW8f3
-// SIG // zB/EL8ghiqBgV3Latykcougjookw2iYsmzK7RlpHeeMr
-// SIG // C0v2mnz4JDLRDzAZ87WWrz4If9OarvP0po6MpQrwraOY
-// SIG // Skib32lUCUpzQ2sSwKKkWfKoCETBs3wP9OP5z4+K8P/V
-// SIG // tcyWjRySqJns6xDG6xZa7PRDrsEcDQgc3/o0o0J85Hlf
-// SIG // bqmJn87ock9SHacMQx6y2/k9olu+DOmZhxqpnqPmWdgt
-// SIG // 4vje88I6iovQQElHbCcKzuQK4s5DGV3j2KUM0e6Z+Vc3
-// SIG // o4CVi3M5+BR7Gb8dPg6oddEhJ+SCRQoQXpDDUd9LQNhy
-// SIG // eVLwIuA=
+// SIG // hvcNAQkFMQ8XDTE2MDkyMDEyNDMxMlowIwYJKoZIhvcN
+// SIG // AQkEMRYEFIdXhxjqG/POXuAnTa2ZCFu4hyTEMA0GCSqG
+// SIG // SIb3DQEBAQUABIIBAHIx06Mo/8dQEgslLSGTfADlW62V
+// SIG // hMn7QKJr4c8T60zGXjdhcT4kG6/NL3ME1/Tkz0hnHPs1
+// SIG // +eTP1PqAJXARdrUMOSCp/CWzBDar7sEET4Y73XNvZYD7
+// SIG // o8qMlDys8f+glcWfsn7XF/7XgqcwPTyZVeMtN9xnSCkg
+// SIG // QJFD129lgybKaIi898Jcx6p3Lr6GYhtw4y4nnbqrtljP
+// SIG // eFkPlvRaZ4YBjjQz6oyK4uOxXVrWOaTgiJ5DfEr94/lf
+// SIG // RHWTHz366hjZBMVxfXpV7FFG/uv1+TvQYRWGdXpsNGHO
+// SIG // S7BCwHmRbKPwMFSBGcIYpFFvjKW/xsdSNIBMUrHxrOEP
+// SIG // oRcsI+8=
 // SIG // End signature block

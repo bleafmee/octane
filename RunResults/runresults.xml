@@ -1,21 +1,20 @@
 <Results>
     <GeneralInfo>
         <Name/>
-        <RunStartTime>2016-08-25 15:26:29</RunStartTime>
-        <Timezone>Mountain Standard Time</Timezone>
+        <RunStartTime>2016-12-12 20:41:59</RunStartTime>
+        <Timezone>Malay Peninsula Standard Time</Timezone>
         <OrchestrationToolName>JUnit</OrchestrationToolName>
         <OrchestrationToolVersion/>
         <ReportTitle>LeanFT Report</ReportTitle>
-        <CustomFields name="Mobile Center Server:" value="http://almtraining:8084/"/>
     </GeneralInfo>
     <ReportNode type="Run">
         <Data>
             <Name>Run Results</Name>
             <Description><![CDATA[ ]]></Description>
-            <StartTime>2016-08-25 15:26:29</StartTime>
-            <Result>Passed</Result>
+            <StartTime>2016-12-12 20:41:59</StartTime>
+            <Result>Failed</Result>
             <Links/>
-            <Duration>37</Duration>
+            <Duration>21</Duration>
             <Extension>
                 <Any>
                     <IconKey>Run</IconKey>
@@ -23,27 +22,27 @@
                 </Any>
             </Extension>
             <Environment>
-                <OSInfo><![CDATA[Microsoft Windows NT 6.1.7601 Service Pack 1]]></OSInfo>
-                <HostName>ALMTRAINING</HostName>
+                <OSInfo><![CDATA[Microsoft Windows NT 6.2.9200.0]]></OSInfo>
+                <HostName><![CDATA[WIN-MQT7G577BT1]]></HostName>
                 <NumberOfCores>2</NumberOfCores>
                 <CpuInfo/>
-                <TotalMemory>5403</TotalMemory>
+                <TotalMemory>16383</TotalMemory>
                 <Locale><![CDATA[en-US]]></Locale>
-                <Timezone>Mountain Standard Time</Timezone>
+                <Timezone>Malay Peninsula Standard Time</Timezone>
                 <User>Administrator</User>
             </Environment>
             <TestedApplication/>
             <ToolName>LeanFT</ToolName>
-            <ToolVersion><![CDATA[12.53]]></ToolVersion>
+            <ToolVersion><![CDATA[12.54]]></ToolVersion>
         </Data>
         <ReportNode type="Package">
             <Data>
                 <Name><![CDATA[com.hp.lft]]></Name>
                 <Description><![CDATA[Version: N/A]]></Description>
-                <StartTime>2016-08-25 15:26:30</StartTime>
-                <Result>Passed</Result>
+                <StartTime>2016-12-12 20:42:00</StartTime>
+                <Result>Failed</Result>
                 <Links/>
-                <Duration>37</Duration>
+                <Duration>20</Duration>
                 <Extension>
                     <Any>
                         <IconKey>Package</IconKey>
@@ -55,10 +54,10 @@
                 <Data>
                     <Name><![CDATA[com.hp.lft.LeanFtTest]]></Name>
                     <Description/>
-                    <StartTime>2016-08-25 15:26:30</StartTime>
-                    <Result>Passed</Result>
+                    <StartTime>2016-12-12 20:42:00</StartTime>
+                    <Result>Failed</Result>
                     <Links/>
-                    <Duration>37</Duration>
+                    <Duration>20</Duration>
                     <Extension>
                         <Any>
                             <IconKey>Class</IconKey>
@@ -70,7 +69,7 @@
                     <Data>
                         <Name><![CDATA[Browser.launch]]></Name>
                         <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>&quot;CHROME&quot;</td></tr></table>]]></Description>
-                        <StartTime>2016-08-25 15:26:30</StartTime>
+                        <StartTime>2016-12-12 20:42:00</StartTime>
                         <Result>Passed</Result>
                         <Links/>
                         <Duration>0</Duration>
@@ -98,10 +97,10 @@
                     <Data>
                         <Name><![CDATA[Web.Browser.Browser]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:35</StartTime>
+                        <StartTime>2016-12-12 20:42:00</StartTime>
                         <Result>Passed</Result>
                         <Links/>
-                        <Duration>5</Duration>
+                        <Duration>7</Duration>
                         <Extension>
                             <Any>
                                 <TestObject>
@@ -128,7 +127,7 @@
                         <Data>
                             <Name><![CDATA[Browser.navigate]]></Name>
                             <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>&quot;http://www.advantageonlineshopping.com/#/&quot;</td></tr></table>]]></Description>
-                            <StartTime>2016-08-25 15:26:34</StartTime>
+                            <StartTime>2016-12-12 20:42:00</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>1</Duration>
@@ -150,7 +149,7 @@
                                             </Property>
                                             <Property>
                                                 <Name><![CDATA[Version]]></Name>
-                                                <Value><![CDATA[52.0]]></Value>
+                                                <Value><![CDATA[55.0]]></Value>
                                             </Property>
                                         </Properties>
                                     </TestObject>
@@ -180,7 +179,7 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:40</StartTime>
+                        <StartTime>2016-12-12 20:42:07</StartTime>
                         <Result>Passed</Result>
                         <Links/>
                         <Duration>1</Duration>
@@ -210,7 +209,7 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:26:40</StartTime>
+                            <StartTime>2016-12-12 20:42:07</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>1</Duration>
@@ -244,7 +243,7 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.MICE Shop Now]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:26:40</StartTime>
+                                <StartTime>2016-12-12 20:42:07</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Duration>1</Duration>
@@ -285,10 +284,10 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:40</StartTime>
+                        <StartTime>2016-12-12 20:42:07</StartTime>
                         <Result>Passed</Result>
                         <Links/>
-                        <Duration>3</Duration>
+                        <Duration>2</Duration>
                         <Extension>
                             <Any>
                                 <TestObject>
@@ -315,10 +314,10 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:26:40</StartTime>
+                            <StartTime>2016-12-12 20:42:07</StartTime>
                             <Result>Passed</Result>
                             <Links/>
-                            <Duration>3</Duration>
+                            <Duration>2</Duration>
                             <Extension>
                                 <Any>
                                     <TestObject>
@@ -349,10 +348,10 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.MICE Shop Now]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:26:40</StartTime>
+                                <StartTime>2016-12-12 20:42:07</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
-                                <Duration>3</Duration>
+                                <Duration>2</Duration>
                                 <Extension>
                                     <Any>
                                         <TestObject>
@@ -387,7 +386,7 @@
                                 <Data>
                                     <Name><![CDATA[MICE Shop Now.click]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:26:40</StartTime>
+                                    <StartTime>2016-12-12 20:42:07</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Duration>1</Duration>
@@ -459,7 +458,7 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:42</StartTime>
+                        <StartTime>2016-12-12 20:42:09</StartTime>
                         <Result>Passed</Result>
                         <Links/>
                         <Duration>1</Duration>
@@ -489,7 +488,7 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:26:42</StartTime>
+                            <StartTime>2016-12-12 20:42:09</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>1</Duration>
@@ -523,7 +522,7 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.accordionColor]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:26:42</StartTime>
+                                <StartTime>2016-12-12 20:42:09</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Duration>1</Duration>
@@ -561,10 +560,10 @@
                                 <Data>
                                     <Name><![CDATA[accordionColor.click]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:26:40</StartTime>
+                                    <StartTime>2016-12-12 20:42:07</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
-                                    <Duration>3</Duration>
+                                    <Duration>2</Duration>
                                     <Extension>
                                         <Any>
                                             <TestObject>
@@ -633,10 +632,10 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:43</StartTime>
+                        <StartTime>2016-12-12 20:42:09</StartTime>
                         <Result>Passed</Result>
                         <Links/>
-                        <Duration>9</Duration>
+                        <Duration>1</Duration>
                         <Extension>
                             <Any>
                                 <TestObject>
@@ -663,10 +662,10 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:26:43</StartTime>
+                            <StartTime>2016-12-12 20:42:09</StartTime>
                             <Result>Passed</Result>
                             <Links/>
-                            <Duration>9</Duration>
+                            <Duration>1</Duration>
                             <Extension>
                                 <Any>
                                     <TestObject>
@@ -697,10 +696,10 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.productsColorsFFFFFF]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:26:43</StartTime>
+                                <StartTime>2016-12-12 20:42:09</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
-                                <Duration>9</Duration>
+                                <Duration>1</Duration>
                                 <Extension>
                                     <Any>
                                         <TestObject>
@@ -735,7 +734,7 @@
                                 <Data>
                                     <Name><![CDATA[productsColorsFFFFFF.click]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:26:42</StartTime>
+                                    <StartTime>2016-12-12 20:42:09</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Duration>1</Duration>
@@ -808,11 +807,140 @@
                                     </Extension>
                                 </Data>
                             </ReportNode>
+                        </ReportNode>
+                    </ReportNode>
+                </ReportNode>
+                <ReportNode type="Context">
+                    <Data>
+                        <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
+                        <Description/>
+                        <StartTime>2016-12-12 20:42:09</StartTime>
+                        <Result>Failed</Result>
+                        <Links/>
+                        <Duration>1</Duration>
+                        <Extension>
+                            <Any>
+                                <TestObject>
+                                    <Path>
+                                        <Object>
+                                            <Type>Web.Browser</Type>
+                                            <Name><![CDATA[ Advantage Shopping]]></Name>
+                                        </Object>
+                                    </Path>
+                                    <Operation/>
+                                    <OperationData/>
+                                    <Properties/>
+                                </TestObject>
+                                <IsHtmlErrorText>true</IsHtmlErrorText>
+                                <IconKey>Browser</IconKey>
+                                <CustomUIElements>
+                                    <DescriptionLabel>Data</DescriptionLabel>
+                                </CustomUIElements>
+                                <HideContextInfo>true</HideContextInfo>
+                            </Any>
+                        </Extension>
+                    </Data>
+                    <ReportNode type="Context">
+                        <Data>
+                            <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
+                            <Description/>
+                            <StartTime>2016-12-12 20:42:09</StartTime>
+                            <Result>Failed</Result>
+                            <Links/>
+                            <Duration>1</Duration>
+                            <Extension>
+                                <Any>
+                                    <TestObject>
+                                        <Path>
+                                            <Object>
+                                                <Type>Web.Browser</Type>
+                                                <Name><![CDATA[ Advantage Shopping]]></Name>
+                                            </Object>
+                                            <Object>
+                                                <Type>Web.Page</Type>
+                                                <Name><![CDATA[ Advantage Shopping]]></Name>
+                                            </Object>
+                                        </Path>
+                                        <Operation/>
+                                        <OperationData/>
+                                        <Properties/>
+                                    </TestObject>
+                                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                                    <IconKey>Page</IconKey>
+                                    <CustomUIElements>
+                                        <DescriptionLabel>Data</DescriptionLabel>
+                                    </CustomUIElements>
+                                    <HideContextInfo>true</HideContextInfo>
+                                </Any>
+                            </Extension>
+                        </Data>
+                        <ReportNode type="Context">
+                            <Data>
+                                <Name><![CDATA[Web.WebElement.$9.99]]></Name>
+                                <Description/>
+                                <StartTime>2016-12-12 20:42:09</StartTime>
+                                <Result>Failed</Result>
+                                <Links/>
+                                <Duration>1</Duration>
+                                <Extension>
+                                    <Any>
+                                        <TestObject>
+                                            <Path>
+                                                <Object>
+                                                    <Type>Web.Browser</Type>
+                                                    <Name><![CDATA[ Advantage Shopping]]></Name>
+                                                </Object>
+                                                <Object>
+                                                    <Type>Web.Page</Type>
+                                                    <Name><![CDATA[ Advantage Shopping]]></Name>
+                                                </Object>
+                                                <Object>
+                                                    <Type>Web.WebElement</Type>
+                                                    <Name><![CDATA[$9.99]]></Name>
+                                                </Object>
+                                            </Path>
+                                            <Operation/>
+                                            <OperationData/>
+                                            <Properties/>
+                                        </TestObject>
+                                        <IsHtmlErrorText>true</IsHtmlErrorText>
+                                        <IconKey>WebElement</IconKey>
+                                        <CustomUIElements>
+                                            <DescriptionLabel>Data</DescriptionLabel>
+                                        </CustomUIElements>
+                                        <HideContextInfo>true</HideContextInfo>
+                                    </Any>
+                                </Extension>
+                            </Data>
+                            <ReportNode type="Verification">
+                                <Data>
+                                    <Name>Verification</Name>
+                                    <Description/>
+                                    <StartTime>2016-12-12 20:42:09</StartTime>
+                                    <Result>Failed</Result>
+                                    <Links/>
+                                    <Extension>
+                                        <Any>
+                                            <Verification>
+                                                <Operation>areEqual</Operation>
+                                                <Data><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-name'>arg1</td></tr><tr><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><tr><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'>&quot;29.99&quot;</table></td><td class='ex-value'><font color='red'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'>&quot;$9.99&quot;</table></font></td></tr></tr></table>]]></Data>
+                                            </Verification>
+                                            <IsHtmlErrorText>true</IsHtmlErrorText>
+                                            <IconKey>VerifyFailure</IconKey>
+                                            <CustomUIElements>
+                                                <DescriptionLabel>Data</DescriptionLabel>
+                                                <ErrorListItemStatusIndicatorIconKey>VerifyFailure</ErrorListItemStatusIndicatorIconKey>
+                                                <HideFlowTreeNodeStatusIndicator>true</HideFlowTreeNodeStatusIndicator>
+                                            </CustomUIElements>
+                                        </Any>
+                                    </Extension>
+                                </Data>
+                            </ReportNode>
                             <ReportNode type="Step">
                                 <Data>
                                     <Name><![CDATA[ Advantage Shopping.close]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:26:43</StartTime>
+                                    <StartTime>2016-12-12 20:42:09</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Duration>1</Duration>
@@ -834,7 +962,7 @@
                                                     </Property>
                                                     <Property>
                                                         <Name><![CDATA[Version]]></Name>
-                                                        <Value><![CDATA[52.0]]></Value>
+                                                        <Value><![CDATA[55.0]]></Value>
                                                     </Property>
                                                 </Properties>
                                             </TestObject>
@@ -866,7 +994,7 @@
                     <Data>
                         <Name><![CDATA[Browser.launch]]></Name>
                         <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>&quot;CHROME&quot;</td></tr></table>]]></Description>
-                        <StartTime>2016-08-25 15:26:43</StartTime>
+                        <StartTime>2016-12-12 20:42:10</StartTime>
                         <Result>Passed</Result>
                         <Links/>
                         <Duration>0</Duration>
@@ -894,7 +1022,7 @@
                     <Data>
                         <Name><![CDATA[Web.Browser.Browser]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:51</StartTime>
+                        <StartTime>2016-12-12 20:42:11</StartTime>
                         <Result>Passed</Result>
                         <Links/>
                         <Duration>7</Duration>
@@ -924,7 +1052,7 @@
                         <Data>
                             <Name><![CDATA[Browser.navigate]]></Name>
                             <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>&quot;http://www.advantageonlineshopping.com/#/&quot;</td></tr></table>]]></Description>
-                            <StartTime>2016-08-25 15:26:51</StartTime>
+                            <StartTime>2016-12-12 20:42:10</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>1</Duration>
@@ -946,7 +1074,7 @@
                                             </Property>
                                             <Property>
                                                 <Name><![CDATA[Version]]></Name>
-                                                <Value><![CDATA[52.0]]></Value>
+                                                <Value><![CDATA[55.0]]></Value>
                                             </Property>
                                         </Properties>
                                     </TestObject>
@@ -976,7 +1104,7 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:57</StartTime>
+                        <StartTime>2016-12-12 20:42:17</StartTime>
                         <Result>Passed</Result>
                         <Links/>
                         <Duration>1</Duration>
@@ -1006,7 +1134,7 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:26:57</StartTime>
+                            <StartTime>2016-12-12 20:42:17</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>1</Duration>
@@ -1040,7 +1168,7 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.MICE Shop Now]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:26:57</StartTime>
+                                <StartTime>2016-12-12 20:42:17</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Duration>1</Duration>
@@ -1081,10 +1209,10 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:26:58</StartTime>
+                        <StartTime>2016-12-12 20:42:17</StartTime>
                         <Result>Passed</Result>
                         <Links/>
-                        <Duration>3</Duration>
+                        <Duration>2</Duration>
                         <Extension>
                             <Any>
                                 <TestObject>
@@ -1111,10 +1239,10 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:26:58</StartTime>
+                            <StartTime>2016-12-12 20:42:17</StartTime>
                             <Result>Passed</Result>
                             <Links/>
-                            <Duration>3</Duration>
+                            <Duration>2</Duration>
                             <Extension>
                                 <Any>
                                     <TestObject>
@@ -1145,10 +1273,10 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.MICE Shop Now]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:26:58</StartTime>
+                                <StartTime>2016-12-12 20:42:17</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
-                                <Duration>3</Duration>
+                                <Duration>2</Duration>
                                 <Extension>
                                     <Any>
                                         <TestObject>
@@ -1183,7 +1311,7 @@
                                 <Data>
                                     <Name><![CDATA[MICE Shop Now.click]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:26:57</StartTime>
+                                    <StartTime>2016-12-12 20:42:17</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Duration>1</Duration>
@@ -1255,7 +1383,7 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:27:00</StartTime>
+                        <StartTime>2016-12-12 20:42:19</StartTime>
                         <Result>Passed</Result>
                         <Links/>
                         <Duration>1</Duration>
@@ -1285,7 +1413,7 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:27:00</StartTime>
+                            <StartTime>2016-12-12 20:42:19</StartTime>
                             <Result>Passed</Result>
                             <Links/>
                             <Duration>1</Duration>
@@ -1319,7 +1447,7 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.accordionColor]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:27:00</StartTime>
+                                <StartTime>2016-12-12 20:42:19</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Duration>1</Duration>
@@ -1357,10 +1485,10 @@
                                 <Data>
                                     <Name><![CDATA[accordionColor.click]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:26:58</StartTime>
+                                    <StartTime>2016-12-12 20:42:17</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
-                                    <Duration>3</Duration>
+                                    <Duration>2</Duration>
                                     <Extension>
                                         <Any>
                                             <TestObject>
@@ -1429,10 +1557,10 @@
                     <Data>
                         <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
                         <Description/>
-                        <StartTime>2016-08-25 15:27:00</StartTime>
+                        <StartTime>2016-12-12 20:42:19</StartTime>
                         <Result>Passed</Result>
                         <Links/>
-                        <Duration>6</Duration>
+                        <Duration>1</Duration>
                         <Extension>
                             <Any>
                                 <TestObject>
@@ -1459,10 +1587,10 @@
                         <Data>
                             <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
                             <Description/>
-                            <StartTime>2016-08-25 15:27:00</StartTime>
+                            <StartTime>2016-12-12 20:42:19</StartTime>
                             <Result>Passed</Result>
                             <Links/>
-                            <Duration>6</Duration>
+                            <Duration>1</Duration>
                             <Extension>
                                 <Any>
                                     <TestObject>
@@ -1493,10 +1621,10 @@
                             <Data>
                                 <Name><![CDATA[Web.WebElement.productsColors545195]]></Name>
                                 <Description/>
-                                <StartTime>2016-08-25 15:27:00</StartTime>
+                                <StartTime>2016-12-12 20:42:19</StartTime>
                                 <Result>Passed</Result>
                                 <Links/>
-                                <Duration>6</Duration>
+                                <Duration>1</Duration>
                                 <Extension>
                                     <Any>
                                         <TestObject>
@@ -1531,7 +1659,7 @@
                                 <Data>
                                     <Name><![CDATA[productsColors545195.click]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:27:00</StartTime>
+                                    <StartTime>2016-12-12 20:42:19</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Duration>1</Duration>
@@ -1604,11 +1732,140 @@
                                     </Extension>
                                 </Data>
                             </ReportNode>
+                        </ReportNode>
+                    </ReportNode>
+                </ReportNode>
+                <ReportNode type="Context">
+                    <Data>
+                        <Name><![CDATA[Web.Browser. Advantage Shopping]]></Name>
+                        <Description/>
+                        <StartTime>2016-12-12 20:42:19</StartTime>
+                        <Result>Failed</Result>
+                        <Links/>
+                        <Duration>1</Duration>
+                        <Extension>
+                            <Any>
+                                <TestObject>
+                                    <Path>
+                                        <Object>
+                                            <Type>Web.Browser</Type>
+                                            <Name><![CDATA[ Advantage Shopping]]></Name>
+                                        </Object>
+                                    </Path>
+                                    <Operation/>
+                                    <OperationData/>
+                                    <Properties/>
+                                </TestObject>
+                                <IsHtmlErrorText>true</IsHtmlErrorText>
+                                <IconKey>Browser</IconKey>
+                                <CustomUIElements>
+                                    <DescriptionLabel>Data</DescriptionLabel>
+                                </CustomUIElements>
+                                <HideContextInfo>true</HideContextInfo>
+                            </Any>
+                        </Extension>
+                    </Data>
+                    <ReportNode type="Context">
+                        <Data>
+                            <Name><![CDATA[Web.Page. Advantage Shopping]]></Name>
+                            <Description/>
+                            <StartTime>2016-12-12 20:42:19</StartTime>
+                            <Result>Failed</Result>
+                            <Links/>
+                            <Duration>1</Duration>
+                            <Extension>
+                                <Any>
+                                    <TestObject>
+                                        <Path>
+                                            <Object>
+                                                <Type>Web.Browser</Type>
+                                                <Name><![CDATA[ Advantage Shopping]]></Name>
+                                            </Object>
+                                            <Object>
+                                                <Type>Web.Page</Type>
+                                                <Name><![CDATA[ Advantage Shopping]]></Name>
+                                            </Object>
+                                        </Path>
+                                        <Operation/>
+                                        <OperationData/>
+                                        <Properties/>
+                                    </TestObject>
+                                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                                    <IconKey>Page</IconKey>
+                                    <CustomUIElements>
+                                        <DescriptionLabel>Data</DescriptionLabel>
+                                    </CustomUIElements>
+                                    <HideContextInfo>true</HideContextInfo>
+                                </Any>
+                            </Extension>
+                        </Data>
+                        <ReportNode type="Context">
+                            <Data>
+                                <Name><![CDATA[Web.WebElement.$9.99]]></Name>
+                                <Description/>
+                                <StartTime>2016-12-12 20:42:19</StartTime>
+                                <Result>Failed</Result>
+                                <Links/>
+                                <Duration>1</Duration>
+                                <Extension>
+                                    <Any>
+                                        <TestObject>
+                                            <Path>
+                                                <Object>
+                                                    <Type>Web.Browser</Type>
+                                                    <Name><![CDATA[ Advantage Shopping]]></Name>
+                                                </Object>
+                                                <Object>
+                                                    <Type>Web.Page</Type>
+                                                    <Name><![CDATA[ Advantage Shopping]]></Name>
+                                                </Object>
+                                                <Object>
+                                                    <Type>Web.WebElement</Type>
+                                                    <Name><![CDATA[$9.99]]></Name>
+                                                </Object>
+                                            </Path>
+                                            <Operation/>
+                                            <OperationData/>
+                                            <Properties/>
+                                        </TestObject>
+                                        <IsHtmlErrorText>true</IsHtmlErrorText>
+                                        <IconKey>WebElement</IconKey>
+                                        <CustomUIElements>
+                                            <DescriptionLabel>Data</DescriptionLabel>
+                                        </CustomUIElements>
+                                        <HideContextInfo>true</HideContextInfo>
+                                    </Any>
+                                </Extension>
+                            </Data>
+                            <ReportNode type="Verification">
+                                <Data>
+                                    <Name>Verification</Name>
+                                    <Description/>
+                                    <StartTime>2016-12-12 20:42:19</StartTime>
+                                    <Result>Failed</Result>
+                                    <Links/>
+                                    <Extension>
+                                        <Any>
+                                            <Verification>
+                                                <Operation>areEqual</Operation>
+                                                <Data><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-name'>arg1</td></tr><tr><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><tr><td class='ex-value'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'>&quot;19.99&quot;</table></td><td class='ex-value'><font color='red'><style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'>&quot;$9.99&quot;</table></font></td></tr></tr></table>]]></Data>
+                                            </Verification>
+                                            <IsHtmlErrorText>true</IsHtmlErrorText>
+                                            <IconKey>VerifyFailure</IconKey>
+                                            <CustomUIElements>
+                                                <DescriptionLabel>Data</DescriptionLabel>
+                                                <ErrorListItemStatusIndicatorIconKey>VerifyFailure</ErrorListItemStatusIndicatorIconKey>
+                                                <HideFlowTreeNodeStatusIndicator>true</HideFlowTreeNodeStatusIndicator>
+                                            </CustomUIElements>
+                                        </Any>
+                                    </Extension>
+                                </Data>
+                            </ReportNode>
                             <ReportNode type="Step">
                                 <Data>
                                     <Name><![CDATA[ Advantage Shopping.close]]></Name>
                                     <Description/>
-                                    <StartTime>2016-08-25 15:27:00</StartTime>
+                                    <StartTime>2016-12-12 20:42:19</StartTime>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Duration>1</Duration>
@@ -1630,7 +1887,7 @@
                                                     </Property>
                                                     <Property>
                                                         <Name><![CDATA[Version]]></Name>
-                                                        <Value><![CDATA[52.0]]></Value>
+                                                        <Value><![CDATA[55.0]]></Value>
                                                     </Property>
                                                 </Properties>
                                             </TestObject>

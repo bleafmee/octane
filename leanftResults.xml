@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="2" time="31.357741">
-<testcase classname="Advantage Online" name="verify mice color" time="13.49157">
-<skipped><![CDATA[Given I am in the site......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="19.293087">
+<testcase classname="Advantage Online" name="verify mice color" time="9.99172">
+<system-out><![CDATA[Given I am in the site......................................................passed
 And I select the Mice category..............................................passed
 When I filter by "white" color..............................................passed
-Then the mouse price is "29.99".............................................undefined
-]]></skipped>
+Then the mouse price is "29.99".............................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Advantage Online" name="verify mice color 2" time="17.866171">
-<skipped><![CDATA[Given I am in the site......................................................passed
+<testcase classname="Advantage Online" name="verify mice color 2" time="9.301367">
+<system-out><![CDATA[Given I am in the site......................................................passed
 And I select the Mice category..............................................passed
 When I filter by "purple" color.............................................passed
-Then the mouse price is "9.99"..............................................undefined
-]]></skipped>
+Then the mouse price is "19.99".............................................passed
+]]></system-out>
 </testcase>
 </testsuite>
