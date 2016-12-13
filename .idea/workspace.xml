@@ -43,19 +43,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ba90ff3-43c1-41e3-bb82-233a58356c32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hp/lft/OctaneCucumber.class" afterPath="$PROJECT_DIR$/target/classes/com/hp/lft/OctaneCucumber.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RunResults/Extensions/extMain.js" afterPath="$PROJECT_DIR$/RunResults/Extensions/extMain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RunResults/runresults.css" afterPath="$PROJECT_DIR$/RunResults/runresults.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RunResults/runresults.html" afterPath="$PROJECT_DIR$/RunResults/runresults.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RunResults/runresults.json" afterPath="$PROJECT_DIR$/RunResults/runresults.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RunResults/runresults.xml" afterPath="$PROJECT_DIR$/RunResults/runresults.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gherkinNGAResults.xml_" afterPath="$PROJECT_DIR$/gherkinNGAResults.xml_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leanftResults.xml" afterPath="$PROJECT_DIR$/leanftResults.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/features/advantage.feature" afterPath="$PROJECT_DIR$/src/main/features/advantage.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hp/lft/OctaneCucumber.java" afterPath="$PROJECT_DIR$/src/main/java/com/hp/lft/OctaneCucumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/advantage.feature" afterPath="$PROJECT_DIR$/target/classes/advantage.feature" />
     </list>
     <ignored path="com.hp.lft.demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,9 +70,11 @@
       <file leaf-file-name="AdvantageStepDefinitions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hp/lft/AdvantageStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="459">
               <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +94,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="111" column="52" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,8 +104,8 @@
       <file leaf-file-name="advantage.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/features/advantage.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="17">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -390,9 +381,14 @@
     <property name="project.structure.side.proportion" value="0.39324325" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/features" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="main.java.settings.OctaneSettings" />
     <property name="settings.editor.splitter.proportion" value="0.23212537" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Administrator/Documents/workspace/TechTalk/.idea/Messaging Emoji Chinese-3380.feature" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\workspace\TechTalk\src\main\features" />
+    </key>
   </component>
   <component name="RunManager" selected="Cucumber java.Feature: Messaging Emoji Chinese-3380">
     <configuration default="false" name="LeanFtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -667,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481525220316</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="user story #1135 : add bdd test">
+      <created>1481611198018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1481611198018</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TaskboardConfiguration" showUserStories="true" showDefects="true" showBlocked="true" showStatuses="&lt;all&gt;" assignTask="false" deactivateItem="false" activateItem="false" />
@@ -798,7 +801,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Firtst Commit" />
     <MESSAGE value="change price" />
-    <option name="LAST_COMMIT_MESSAGE" value="change price" />
+    <MESSAGE value="user story #1135 : add bdd test" />
+    <option name="LAST_COMMIT_MESSAGE" value="user story #1135 : add bdd test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -811,13 +815,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/features/advantage.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hp/lft/HPEAlmOctaneGherkinFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1147,22 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hp/lft/AdvantageStepDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/features/Messaging Emoji Chinese-3380.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1171,10 +1152,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hp/lft/AdvantageStepDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/features/Emoji Gherkin_8001.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="111" column="52" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/features/advantage.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding />
         </state>
       </provider>
