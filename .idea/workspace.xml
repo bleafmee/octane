@@ -44,7 +44,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4ba90ff3-43c1-41e3-bb82-233a58356c32" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/features/advantage.feature" afterPath="$PROJECT_DIR$/src/main/features/advantage.feature" />
     </list>
     <ignored path="com.hp.lft.demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -670,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481611198018</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="user story #1135 : add bdd test">
+      <created>1481639994204</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1481639994204</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TaskboardConfiguration" showUserStories="true" showDefects="true" showBlocked="true" showStatuses="&lt;all&gt;" assignTask="false" deactivateItem="false" activateItem="false" />
